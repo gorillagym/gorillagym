@@ -1,62 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gorilla Gym</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="nav">
-        <h1 class="logo">Gorilla Gym</h1>
-        <a class="cta" href="#join">Join Now</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorilla Gym - Elite Fitness Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-dumbbell"></i>
+                <span>Gorilla Gym</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-      <div class="hero-content">
-        <p class="tag">Unleash Your Strength</p>
-        <h2>Train Hard. Stay Consistent. Become Unstoppable.</h2>
-        <p>
-          Gorilla Gym is a no-excuses training space built for real progress.
-          Whether you're new to fitness or chasing personal records, we have
-          the community and coaching to push you forward.
-        </p>
-        <a class="primary-btn" href="#join">Start Your Fitness Journey</a>
-      </div>
-    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Gorilla Gym</h1>
+            <p>Transform Your Body, Transform Your Life</p>
+            <button class="cta-button">Start Your Journey Today</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://www.freepik.com/free-photo/fit-man-doing-exercise-with-dumbbells_13339173.jpg" alt="Fitness Training">
+        </div>
+    </section>
 
-    <main>
-      <section class="features">
-        <article>
-          <h3>Elite Equipment</h3>
-          <p>
-            From free weights and squat racks to cardio machines, everything you
-            need for serious results.
-          </p>
-        </article>
-        <article>
-          <h3>Expert Coaching</h3>
-          <p>
-            Get personalized guidance from certified trainers who care about
-            your goals.
-          </p>
-        </article>
-        <article>
-          <h3>Powerful Community</h3>
-          <p>
-            Surround yourself with motivated members who help you show up and
-            level up.
-          </p>
-        </article>
-      </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Gorilla Gym</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Elite Fitness</h3>
+                    <p>At Gorilla Gym, we believe in empowering individuals to achieve their fitness goals. Our state-of-the-art facilities combined with expert trainers create the perfect environment for transformation.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Modern Equipment & Technology</li>
+                        <li><i class="fas fa-check"></i> Professional Certified Trainers</li>
+                        <li><i class="fas fa-check"></i> 24/7 Access & Support</li>
+                        <li><i class="fas fa-check"></i> Flexible Membership Plans</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.freepik.com/free-photo/sporty-man-with-muscular-body_32442268.jpg" alt="Gym Facility">
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <section class="join" id="join">
-        <h3>Ready to go full beast mode?</h3>
-        <p>Sign up today and get your first training session free.</p>
-        <a class="primary-btn" href="mailto:hello@gorillagym.com"
-          >Claim Free Session</a
-        >
-      </section>
-    </main>
-  </body>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase your strength with our comprehensive strength training programs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cardio & Conditioning</h3>
+                    <p>Improve your cardiovascular health with state-of-the-art cardio equipment and classes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-person-hiking"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one coaching with certified trainers tailored to your specific fitness goals.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Enhance your flexibility and mental well-being through guided yoga sessions.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Nutrition Coaching</h3>
+                    <p>Get expert dietary guidance from our certified nutrition specialists.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3>Aqua Fitness</h3>
+                    <p>Low-impact water-based exercises perfect for all fitness levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2>Group Classes</h2>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <img src="https://www.freepik.com/free-photo/people-doing-group-fitness-class_12084231.jpg" alt="Zumba Class">
+                    <h3>Zumba</h3>
+                    <p>High-energy dance workout that's more like a party than exercise.</p>
+                    <p class="schedule">Mon, Wed, Fri - 6:00 PM</p>
+                </div>
+
+                <div class="class-card">
+                    <img src="https://www.freepik.com/free-photo/group-yoga-meditation_13339160.jpg" alt="Yoga Class">
+                    <h3>Power Yoga</h3>
+                    <p>Build strength and flexibility while achieving mental clarity.</p>
+                    <p class="schedule">Tue, Thu - 7:00 PM</p>
+                </div>
+
+                <div class="class-card">
+                    <img src="https://www.freepik.com/free-photo/people-doing-spinning_12084228.jpg" alt="Spin Class">
+                    <h3>Spin Class</h3>
+                    <p>Intense indoor cycling workout set to motivating music.</p>
+                    <p class="schedule">Daily - 6:30 AM & 5:30 PM</p>
+                </div>
+
+                <div class="class-card">
+                    <img src="https://www.freepik.com/free-photo/boxing-training_13339176.jpg" alt="Boxing">
+                    <h3>Boxing</h3>
+                    <p>Learn boxing techniques while getting an incredible full-body workout.</p>
+                    <p class="schedule">Tue, Sat - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership">
+        <div class="container">
+            <h2>Membership Plans</h2>
+            <div class="plans-grid">
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <p class="price">$29<span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Gym Access</li>
+                        <li><i class="fas fa-check"></i> Basic Equipment</li>
+                        <li><i class="fas fa-times"></i> Personal Training</li>
+                        <li><i class="fas fa-times"></i> Group Classes</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="plan featured">
+                    <h3>Premium</h3>
+                    <p class="price">$59<span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
+                        <li><i class="fas fa-check"></i> 4 Personal Training Sessions</li>
+                        <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+
+                <div class="plan">
+                    <h3>Elite</h3>
+                    <p class="price">$99<span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 24/7 Access</li>
+                        <li><i class="fas fa-check"></i> All Equipment</li>
+                        <li><i class="fas fa-check"></i> Unlimited Personal Training</li>
+                        <li><i class="fas fa-check"></i> Nutrition & Recovery</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Fitness Street, Gym City, GC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@gorillagym.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 6 AM - 10 PM<br>Sat-Sun: 8 AM - 8 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gorilla Gym. All rights reserved. | Transforming Lives Through Fitness</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

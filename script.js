@@ -1,47 +1,39 @@
-// script.js
-
-// Smooth scrolling
+// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Form validation
-const forms = document.querySelectorAll('form');
-forms.forEach(form => {
-    form.addEventListener('submit', function (e) {
-        let valid = true;
-        this.querySelectorAll('input[required]').forEach(input => {
-            if (!input.value) {
-                valid = false;
-                input.classList.add('error');
-            } else {
-                input.classList.remove('error');
-            }
-        });
-        if (!valid) {
-            e.preventDefault();
-            alert('Please fill in all required fields.');
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     });
 });
 
-// Button interactions
-const buttons = document.querySelectorAll('button');
-buttons.forEach(button => {
-    button.addEventListener('click', function () {
-        alert('Button clicked: ' + this.innerText);
+// Button click handlers
+document.querySelectorAll('.cta-button, .plan button').forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Thank you for your interest! Please fill out our contact form or call us.');
     });
 });
 
-// Dynamic navigation menu
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
-menuToggle.addEventListener('click', function () {
-    navMenu.classList.toggle('active');
+// Form submission
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will contact you soon.');
+        this.reset();
+    });
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) {
+        navbar.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+    } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    }
 });
